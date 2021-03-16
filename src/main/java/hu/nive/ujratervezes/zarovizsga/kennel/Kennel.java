@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Kennel {
 
-    List<Dog> dogs = new ArrayList<>();
+    private List<Dog> dogs = new ArrayList<>();
     Dog dog;
 
     public Kennel() {
