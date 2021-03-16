@@ -10,13 +10,12 @@ import java.util.List;
 public class WorkHours {
 
     public String minWork(String file) {
-        String result = "";
         List<String> names = new ArrayList<>();
         List<Integer> hours = new ArrayList<>();
         List<String> dates = new ArrayList<>();
 
         try (BufferedReader br = Files.newBufferedReader(Path.of(file))){
-            String line = "";
+            String line;
             while ((line = br.readLine())!=null){
                 String [] parts = line.split(",");
 
@@ -45,7 +44,6 @@ public class WorkHours {
             }
         }
 
-        result = minName + ": " + minDate;
-        return result;
+        return minName + ": " + minDate;
     }
 }
