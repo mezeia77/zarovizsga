@@ -3,6 +3,7 @@ package hu.nive.ujratervezes.zarovizsga.dogtypes;
 import javax.sql.DataSource;
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 
@@ -32,6 +33,7 @@ public class DogTypes {
         } catch (SQLException sqlException) {
             throw new IllegalStateException("No data found", sqlException);
         }
+        Collections.sort(result);
         return result;
     }
 }
