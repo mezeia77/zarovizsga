@@ -25,7 +25,7 @@ public class Kennel {
 
     public Dog findByName(String name) {
         for (Dog dog:dogs){
-            if (dog.getName().equals(dog)){
+            if (dog.getName().equals(name)){
                 return dog;
             }
         }
